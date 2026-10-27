@@ -1,0 +1,2600 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2117acd1a0d3cc8bd2528030dff8093f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2117acd1a0d3cc8bd2528030dff8093f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2117acd1a0d3cc8bd2528030dff8093f = L.map(
+                "map_2117acd1a0d3cc8bd2528030dff8093f",
+                {
+                    center: [-15.7801, -47.9292],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ae217944f713f4d3f7f043bb8c53df92 = L.tileLayer(
+                "http://{s}.google.com/vt/lyrs=m\u0026x={x}\u0026y={y}\u0026z={z}",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "google",
+  "subdomains": [
+"mt0",
+"mt1",
+"mt2",
+"mt3",
+],
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ae217944f713f4d3f7f043bb8c53df92.addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+            var marker_989b3812360bc5dc654eae634ee99398 = L.marker(
+                [-19.3003, -40.084481],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_db8c630c0ad7d6ab3a8db17a8b857fd4 = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/fc1aa418-aee9-42cf-9c49-b4f7b56be48e",
+  "iconSize": [50, 25],
+  "iconAnchor": [25, 12.5],
+});
+        
+    
+            marker_989b3812360bc5dc654eae634ee99398.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-101/ES km 138,2<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_989b3812360bc5dc654eae634ee99398.setIcon(icon_db8c630c0ad7d6ab3a8db17a8b857fd4);
+            
+    
+            var marker_ee8ff684677e8003e2e2eb65e4fea212 = L.marker(
+                [-20.093384, -40.34062],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_d8473918a389389702e84c6a60226ce3 = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/fc1aa418-aee9-42cf-9c49-b4f7b56be48e",
+  "iconSize": [50, 25],
+  "iconAnchor": [25, 12.5],
+});
+        
+    
+            marker_ee8ff684677e8003e2e2eb65e4fea212.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-101/ES km 251,4<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ee8ff684677e8003e2e2eb65e4fea212.setIcon(icon_d8473918a389389702e84c6a60226ce3);
+            
+    
+            var marker_e88a454d0de229ea82c0ed29ed54e32b = L.marker(
+                [-22.730084, -42.705881],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_a0d5201e60f50ab07511890d9e814d68 = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/fc1aa418-aee9-42cf-9c49-b4f7b56be48e",
+  "iconSize": [50, 25],
+  "iconAnchor": [25, 12.5],
+});
+        
+    
+            marker_e88a454d0de229ea82c0ed29ed54e32b.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-101/RJ km 272,2<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e88a454d0de229ea82c0ed29ed54e32b.setIcon(icon_a0d5201e60f50ab07511890d9e814d68);
+            
+    
+            var marker_765e1c76489f52e450ab2f7860ed2e5a = L.marker(
+                [-27.126239, -48.610061],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_e235625cd1176bc98d78eac3a0646e7e = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/fc1aa418-aee9-42cf-9c49-b4f7b56be48e",
+  "iconSize": [50, 25],
+  "iconAnchor": [25, 12.5],
+});
+        
+    
+            marker_765e1c76489f52e450ab2f7860ed2e5a.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-101/SC km 151,1<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_765e1c76489f52e450ab2f7860ed2e5a.setIcon(icon_e235625cd1176bc98d78eac3a0646e7e);
+            
+    
+            var marker_1fb53b0f8bfa75caa96474e819ebfc0a = L.marker(
+                [-25.674166, -49.315555],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_60cdec547e0bfb91e1965091da01cc28 = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/fc1aa418-aee9-42cf-9c49-b4f7b56be48e",
+  "iconSize": [50, 25],
+  "iconAnchor": [25, 12.5],
+});
+        
+    
+            marker_1fb53b0f8bfa75caa96474e819ebfc0a.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-116/PR km 129,9<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1fb53b0f8bfa75caa96474e819ebfc0a.setIcon(icon_60cdec547e0bfb91e1965091da01cc28);
+            
+    
+            var marker_4e36dac4a46efea44b4255650421812f = L.marker(
+                [-23.332222, -46.138055],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_c625853014ed62d341dd61a88c00eda6 = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/fc1aa418-aee9-42cf-9c49-b4f7b56be48e",
+  "iconSize": [50, 25],
+  "iconAnchor": [25, 12.5],
+});
+        
+    
+            marker_4e36dac4a46efea44b4255650421812f.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-116/SP km 179,4<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4e36dac4a46efea44b4255650421812f.setIcon(icon_c625853014ed62d341dd61a88c00eda6);
+            
+    
+            var marker_6333960a7a0601c13239f9573561aa5b = L.marker(
+                [-23.76712, -46.90916],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_a073e98b87f25562f01916d156716ed9 = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/fc1aa418-aee9-42cf-9c49-b4f7b56be48e",
+  "iconSize": [50, 25],
+  "iconAnchor": [25, 12.5],
+});
+        
+    
+            marker_6333960a7a0601c13239f9573561aa5b.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-116/SP km 296,2<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6333960a7a0601c13239f9573561aa5b.setIcon(icon_a073e98b87f25562f01916d156716ed9);
+            
+    
+            var marker_406334278e6d45f6f03b9c5cb2889aca = L.marker(
+                [-12.722403, -38.45096],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_efd19cc0166ecc3af063928dc969f4da = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/fc1aa418-aee9-42cf-9c49-b4f7b56be48e",
+  "iconSize": [50, 25],
+  "iconAnchor": [25, 12.5],
+});
+        
+    
+            marker_406334278e6d45f6f03b9c5cb2889aca.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-324/BA km 594,5<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_406334278e6d45f6f03b9c5cb2889aca.setIcon(icon_efd19cc0166ecc3af063928dc969f4da);
+            
+    
+            var marker_d7819bed8da52e1462ad21ad4dac07a4 = L.marker(
+                [-2.8997166675, -41.6899003757292],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_6496e8f48a66039e3513dcd4410deb50 = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/1da0d37c-0904-4e55-bb55-4b8c5321bcab",
+  "iconSize": [40, 20],
+  "iconAnchor": [20, 10],
+});
+        
+    
+            marker_d7819bed8da52e1462ad21ad4dac07a4.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-343/PI km 4,1<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d7819bed8da52e1462ad21ad4dac07a4.setIcon(icon_6496e8f48a66039e3513dcd4410deb50);
+            
+    
+            var marker_73382f62d1f1f541afe053431333aab4 = L.marker(
+                [-9.0965863273913, -64.0919528913043],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_f248d57215afcb36dc892294e156eb57 = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/1da0d37c-0904-4e55-bb55-4b8c5321bcab",
+  "iconSize": [40, 20],
+  "iconAnchor": [20, 10],
+});
+        
+    
+            marker_73382f62d1f1f541afe053431333aab4.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-364/RO km 759,6<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_73382f62d1f1f541afe053431333aab4.setIcon(icon_f248d57215afcb36dc892294e156eb57);
+            
+    
+            var marker_9dd65d5aa20c2307c56d1e22beccae89 = L.marker(
+                [-15.79518, -48.198943],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_90383acceed975d8bf737f18fbd2bae8 = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_9dd65d5aa20c2307c56d1e22beccae89.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-070/DF km 16<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9dd65d5aa20c2307c56d1e22beccae89.setIcon(icon_90383acceed975d8bf737f18fbd2bae8);
+            
+    
+            var marker_164d1394e015aead8e223f3d1c5aa986 = L.marker(
+                [-19.422333, -40.077889],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_c004653e707aa9b9e923df74a88d137a = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_164d1394e015aead8e223f3d1c5aa986.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-101/ES km 152<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_164d1394e015aead8e223f3d1c5aa986.setIcon(icon_c004653e707aa9b9e923df74a88d137a);
+            
+    
+            var marker_6ebf321f8fad49be087986c4eff38c6b = L.marker(
+                [-20.382722, -40.459639],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_41fc0ab50565993ea7f88d683a34851c = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_6ebf321f8fad49be087986c4eff38c6b.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-101/ES km 304<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6ebf321f8fad49be087986c4eff38c6b.setIcon(icon_41fc0ab50565993ea7f88d683a34851c);
+            
+    
+            var marker_e19516e6adf4ada45ab58783bad62d20 = L.marker(
+                [-22.792969, -43.024832],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_5c72baa87e37b249b040fff5e33b6142 = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_e19516e6adf4ada45ab58783bad62d20.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-101/RJ km 307<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e19516e6adf4ada45ab58783bad62d20.setIcon(icon_5c72baa87e37b249b040fff5e33b6142);
+            
+    
+            var marker_98f26fd628d845e458fd85ea5bb559cb = L.marker(
+                [-27.065972, -48.595528],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_37da6435de7dbc5d4469cce0800c73cc = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_98f26fd628d845e458fd85ea5bb559cb.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-101/SC km 143<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_98f26fd628d845e458fd85ea5bb559cb.setIcon(icon_37da6435de7dbc5d4469cce0800c73cc);
+            
+    
+            var marker_34e76376867cb693c294d63a8fa6babe = L.marker(
+                [-27.694722, -48.661667],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_25d114afb0517b1e28d7ad5052bc2f9a = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_34e76376867cb693c294d63a8fa6babe.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-101/SC km 220<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_34e76376867cb693c294d63a8fa6babe.setIcon(icon_25d114afb0517b1e28d7ad5052bc2f9a);
+            
+    
+            var marker_274fd24d010ab9cb96b3e69ee73d6205 = L.marker(
+                [-26.610556, -48.722222],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_7fd037aa3793abccfda67be437ff2847 = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_274fd24d010ab9cb96b3e69ee73d6205.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-101/SC km 81<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_274fd24d010ab9cb96b3e69ee73d6205.setIcon(icon_7fd037aa3793abccfda67be437ff2847);
+            
+    
+            var marker_0ee261d5905d3afd0d3f67dce31b917a = L.marker(
+                [-25.741278, -49.317639],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_d3b5e3a8f324d1091f8491bfbf117d57 = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_0ee261d5905d3afd0d3f67dce31b917a.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-116/PR km 137<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0ee261d5905d3afd0d3f67dce31b917a.setIcon(icon_d3b5e3a8f324d1091f8491bfbf117d57);
+            
+    
+            var marker_3990ee882e27d2482b0f734a0174bc2f = L.marker(
+                [-25.280187, -48.926503],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_18054b6bfdbd541c6c4f9fdedfcad8a3 = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_3990ee882e27d2482b0f734a0174bc2f.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-116/PR km 56<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3990ee882e27d2482b0f734a0174bc2f.setIcon(icon_18054b6bfdbd541c6c4f9fdedfcad8a3);
+            
+    
+            var marker_2d4b37719f4840b628dd0f3bd1a37e0d = L.marker(
+                [-23.106582, -45.697545],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_b90cd8465432c40da4750e31ae769747 = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_2d4b37719f4840b628dd0f3bd1a37e0d.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-116/SP km 126<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2d4b37719f4840b628dd0f3bd1a37e0d.setIcon(icon_b90cd8465432c40da4750e31ae769747);
+            
+    
+            var marker_af70dc73403da30cca476f00b27625b2 = L.marker(
+                [-23.2495, -45.93537],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_44a57899607322b727cc22e69592f51f = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_af70dc73403da30cca476f00b27625b2.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-116/SP km 156<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_af70dc73403da30cca476f00b27625b2.setIcon(icon_44a57899607322b727cc22e69592f51f);
+            
+    
+            var marker_18534d5582b0a05babba3adae81e25cd = L.marker(
+                [-23.423889, -46.397778],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_fede51473eb09b345ee00cc75c401bf4 = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_18534d5582b0a05babba3adae81e25cd.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-116/SP km 208<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_18534d5582b0a05babba3adae81e25cd.setIcon(icon_fede51473eb09b345ee00cc75c401bf4);
+            
+    
+            var marker_80c7e2b4e5798ebbed41afbf8fdae7ea = L.marker(
+                [-23.69, -46.862667],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_e49b2a888fc395eed3a57bdac45eb4f7 = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_80c7e2b4e5798ebbed41afbf8fdae7ea.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-116/SP km 287<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_80c7e2b4e5798ebbed41afbf8fdae7ea.setIcon(icon_e49b2a888fc395eed3a57bdac45eb4f7);
+            
+    
+            var marker_3326cdbde0474234ea5f00d522c042ee = L.marker(
+                [-20.854966, -49.404523],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_9722f14697a01f3b0c88a4d4b0f2aecb = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_3326cdbde0474234ea5f00d522c042ee.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-153/SP km 69<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3326cdbde0474234ea5f00d522c042ee.setIcon(icon_9722f14697a01f3b0c88a4d4b0f2aecb);
+            
+    
+            var marker_00ccc2d3f3b7d58e70be94c24ed90a53 = L.marker(
+                [-12.69782, -55.81114],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_246c264e66b9124b0e75b0c22207efdc = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_00ccc2d3f3b7d58e70be94c24ed90a53.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-163/MT km 733<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_00ccc2d3f3b7d58e70be94c24ed90a53.setIcon(icon_246c264e66b9124b0e75b0c22207efdc);
+            
+    
+            var marker_694767d6ddc3a5a21161d1a403744af0 = L.marker(
+                [-7.191833, -35.226361],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_2896fedacc80cac53800d91007ebd984 = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_694767d6ddc3a5a21161d1a403744af0.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-230/PB km 70<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_694767d6ddc3a5a21161d1a403744af0.setIcon(icon_2896fedacc80cac53800d91007ebd984);
+            
+    
+            var marker_379b50ed3ee10c199d261829c432bc8d = L.marker(
+                [-25.564132, -48.632531],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_3914111a8a5e7854ba805ccaea344f98 = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_379b50ed3ee10c199d261829c432bc8d.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-277/PR km 12<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_379b50ed3ee10c199d261829c432bc8d.setIcon(icon_3914111a8a5e7854ba805ccaea344f98);
+            
+    
+            var marker_8b8acd76b141b68ce5564467d5517113 = L.marker(
+                [-25.5095, -54.595624],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_6c4524aca223ceb5375b392c4007694b = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_8b8acd76b141b68ce5564467d5517113.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-277/PR km 730<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8b8acd76b141b68ce5564467d5517113.setIcon(icon_6c4524aca223ceb5375b392c4007694b);
+            
+    
+            var marker_de9258601474f9ff40b9a4a9a3305790 = L.marker(
+                [-26.475455, -48.988163],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_48e7807d7ec6a5c27f40b6ebe70d9f14 = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_de9258601474f9ff40b9a4a9a3305790.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-280/SC km 54<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_de9258601474f9ff40b9a4a9a3305790.setIcon(icon_48e7807d7ec6a5c27f40b6ebe70d9f14);
+            
+    
+            var marker_7eef72480573386d7402223ebfab0a21 = L.marker(
+                [-5.199444, -42.7585],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_02c36b156ddbd6be188077d50a5dac5e = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_7eef72480573386d7402223ebfab0a21.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-316/PI km 11<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7eef72480573386d7402223ebfab0a21.setIcon(icon_02c36b156ddbd6be188077d50a5dac5e);
+            
+    
+            var marker_bfa525ec2809862c576bdb371583b733 = L.marker(
+                [-12.793056, -38.404861],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_ead80f158bcdbff32771710d8ee6780b = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_bfa525ec2809862c576bdb371583b733.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-324/BA km 604<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bfa525ec2809862c576bdb371583b733.setIcon(icon_ead80f158bcdbff32771710d8ee6780b);
+            
+    
+            var marker_83a0f5ec4e90c65058ec69351fe9b4c8 = L.marker(
+                [-5.056861, -42.684056],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_a05675634a8d4646cca198269281de39 = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_83a0f5ec4e90c65058ec69351fe9b4c8.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-343/PI km 333<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_83a0f5ec4e90c65058ec69351fe9b4c8.setIcon(icon_a05675634a8d4646cca198269281de39);
+            
+    
+            var marker_c3e03020b6f5ae40e88d51e9aaf495ea = L.marker(
+                [-10.395619, -62.532244],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_90e7ce0f776b91a40b71285863b9477d = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_c3e03020b6f5ae40e88d51e9aaf495ea.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-364/RO km 432<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c3e03020b6f5ae40e88d51e9aaf495ea.setIcon(icon_90e7ce0f776b91a40b71285863b9477d);
+            
+    
+            var marker_4712b62eb24759c44349816872da80cb = L.marker(
+                [-23.104449, -52.350791],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_6764033321979ce2a1e50faca34425b1 = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_4712b62eb24759c44349816872da80cb.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-376/PR km 116<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4712b62eb24759c44349816872da80cb.setIcon(icon_6764033321979ce2a1e50faca34425b1);
+            
+    
+            var marker_d05c6eb2043e1f1be2f1e06c619bb9db = L.marker(
+                [-23.507009, -51.73348],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_5a6847c224c0dc38613d79691936dd3a = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_d05c6eb2043e1f1be2f1e06c619bb9db.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-376/PR km 201<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d05c6eb2043e1f1be2f1e06c619bb9db.setIcon(icon_5a6847c224c0dc38613d79691936dd3a);
+            
+    
+            var marker_59ca26bfb0dac05bfb4d9d1335fec2e8 = L.marker(
+                [-23.191359, -46.585022],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_ca1d42fecbdf894a62e33df8809317de = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_59ca26bfb0dac05bfb4d9d1335fec2e8.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-381/SP km 47<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_59ca26bfb0dac05bfb4d9d1335fec2e8.setIcon(icon_ca1d42fecbdf894a62e33df8809317de);
+            
+    
+            var marker_8d86c27d2f62d615a0ae5901efeb1c01 = L.marker(
+                [-9.358917, -40.480667],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_dabd28d765282cc4d68717852256f208 = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_8d86c27d2f62d615a0ae5901efeb1c01.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-428/PE km 186<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8d86c27d2f62d615a0ae5901efeb1c01.setIcon(icon_dabd28d765282cc4d68717852256f208);
+            
+    
+            var marker_ca6932431758515cd76ba32cbed76904 = L.marker(
+                [-26.862522, -49.091855],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_83f7139530d563a20fe11f40c271f9d9 = L.icon({
+  "iconUrl": "https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba",
+  "iconSize": [20, 25],
+  "iconAnchor": [10, 12.5],
+});
+        
+    
+            marker_ca6932431758515cd76ba32cbed76904.bindTooltip(
+                `<div>
+                     <b>Localização do posto de pesagem:</b> BR-470/SC km 53<br>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ca6932431758515cd76ba32cbed76904.setIcon(icon_83f7139530d563a20fe11f40c271f9d9);
+            
+    
+            var marker_3a42d264938680f2a64a4f35b6db8b24 = L.marker(
+                [-25.51596728134616, -48.73750743467949],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_0788be79db6d424531e2d47424bf5b83 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_514ec3012a3a8f96fd1bb77864a6f477 = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_2000724de8bbaa12d60ab3e9c9d2f8d4 = $(`<div id="html_2000724de8bbaa12d60ab3e9c9d2f8d4" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-277/PR do km 0 ao 10</p><p>Trecho Concedido (ANTT): Não</p><p>Total de Acidentes (PRF): 215</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 29%</p><p>Total de Mortos (PRF): 9</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 56%</p><p>ICM (DNIT): Não verificado</p><p>Estado Geral da Rodovia (CNT): Bom</p><p>Pavimento (CNT): Bom</p><p>Sinalização (CNT): Bom</p><p>Geometria (CNT): Bom</p><p>Multas por Excesso de Carga (PRF): 11</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 0</p><p>Volume Total de Veículos por Dia (DNIT): 0</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Simples</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): PARANAGUA/PR</p><p>Jurisdição (MPF): PR/PR</p></div></div>`)[0];
+                popup_514ec3012a3a8f96fd1bb77864a6f477.setContent(html_2000724de8bbaa12d60ab3e9c9d2f8d4);
+            
+        
+
+        marker_3a42d264938680f2a64a4f35b6db8b24.bindPopup(popup_514ec3012a3a8f96fd1bb77864a6f477)
+        ;
+
+        
+    
+    
+            marker_3a42d264938680f2a64a4f35b6db8b24.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3a42d264938680f2a64a4f35b6db8b24.setIcon(icon_0788be79db6d424531e2d47424bf5b83);
+            
+    
+            var marker_4dd269f97dd7218f235551e0466f76a2 = L.marker(
+                [-15.79224789884097, -48.18377517636118],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_8e5fb76b2990854f168d7233274c6dfc = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_326ac7c7fb8d32ea1d7f7cde051a88b0 = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_fe36c5cab47e9563d139e77c5cf47590 = $(`<div id="html_fe36c5cab47e9563d139e77c5cf47590" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-070/DF do km 10 ao 20</p><p>Trecho Concedido (ANTT): Não</p><p>Total de Acidentes (PRF): 160</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 8%</p><p>Total de Mortos (PRF): 3</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 67%</p><p>ICM (DNIT): Bom</p><p>Estado Geral da Rodovia (CNT): Bom</p><p>Pavimento (CNT): Ótimo</p><p>Sinalização (CNT): Regular</p><p>Geometria (CNT): Bom</p><p>Multas por Excesso de Carga (PRF): 1</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 2295</p><p>Volume Total de Veículos por Dia (DNIT): 15115</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Dupla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): BRASILIA/DF</p><p>Jurisdição (MPF): PR/DF</p></div></div>`)[0];
+                popup_326ac7c7fb8d32ea1d7f7cde051a88b0.setContent(html_fe36c5cab47e9563d139e77c5cf47590);
+            
+        
+
+        marker_4dd269f97dd7218f235551e0466f76a2.bindPopup(popup_326ac7c7fb8d32ea1d7f7cde051a88b0)
+        ;
+
+        
+    
+    
+            marker_4dd269f97dd7218f235551e0466f76a2.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4dd269f97dd7218f235551e0466f76a2.setIcon(icon_8e5fb76b2990854f168d7233274c6dfc);
+            
+    
+            var marker_f532cbdef391616a4b3ef3178eca693a = L.marker(
+                [-26.89755923567493, -49.1000764777135],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_49563f38daa6caf3ac05c9818b90c267 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_f65b2049d72fe7f3b45663b68fa22ad2 = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_75c3fa45f98101cbfdd18b3a0f31f735 = $(`<div id="html_75c3fa45f98101cbfdd18b3a0f31f735" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-470/SC do km 50 ao 60</p><p>Trecho Concedido (ANTT): Não</p><p>Total de Acidentes (PRF): 156</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 12%</p><p>Total de Mortos (PRF): 3</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 67%</p><p>ICM (DNIT): Bom</p><p>Estado Geral da Rodovia (CNT): Não verificado</p><p>Pavimento (CNT): Não verificado</p><p>Sinalização (CNT): Não verificado</p><p>Geometria (CNT): Não verificado</p><p>Multas por Excesso de Carga (PRF): 7</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 4416</p><p>Volume Total de Veículos por Dia (DNIT): 25163</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Simples</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Não verificado</p><p>Município da Maioria dos Acidentes (PRF): BLUMENAU/SC</p><p>Jurisdição (MPF): PRM Blumenau/SC</p></div></div>`)[0];
+                popup_f65b2049d72fe7f3b45663b68fa22ad2.setContent(html_75c3fa45f98101cbfdd18b3a0f31f735);
+            
+        
+
+        marker_f532cbdef391616a4b3ef3178eca693a.bindPopup(popup_f65b2049d72fe7f3b45663b68fa22ad2)
+        ;
+
+        
+    
+    
+            marker_f532cbdef391616a4b3ef3178eca693a.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f532cbdef391616a4b3ef3178eca693a.setIcon(icon_49563f38daa6caf3ac05c9818b90c267);
+            
+    
+            var marker_ddb8cb91e8b9a7cde5e7013dc8f2d6e3 = L.marker(
+                [-25.50015164262626, -54.53889493818183],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_4e1ea7d6ef5d74875876f8207732922d = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_67a7aede3d937b3604fc20e8b573a4e7 = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_7ad7b03fd988d154f618fcc66a50d811 = $(`<div id="html_7ad7b03fd988d154f618fcc66a50d811" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-277/PR do km 720 ao 730</p><p>Trecho Concedido (ANTT): Não</p><p>Total de Acidentes (PRF): 153</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 15%</p><p>Total de Mortos (PRF): 2</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 50%</p><p>ICM (DNIT): Bom</p><p>Estado Geral da Rodovia (CNT): Bom</p><p>Pavimento (CNT): Bom</p><p>Sinalização (CNT): Bom</p><p>Geometria (CNT): Bom</p><p>Multas por Excesso de Carga (PRF): 1</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 1721</p><p>Volume Total de Veículos por Dia (DNIT): 10779</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Dupla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): FOZ DO IGUACU/PR</p><p>Jurisdição (MPF): PRM Foz do Iguaçu/PR</p></div></div>`)[0];
+                popup_67a7aede3d937b3604fc20e8b573a4e7.setContent(html_7ad7b03fd988d154f618fcc66a50d811);
+            
+        
+
+        marker_ddb8cb91e8b9a7cde5e7013dc8f2d6e3.bindPopup(popup_67a7aede3d937b3604fc20e8b573a4e7)
+        ;
+
+        
+    
+    
+            marker_ddb8cb91e8b9a7cde5e7013dc8f2d6e3.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ddb8cb91e8b9a7cde5e7013dc8f2d6e3.setIcon(icon_4e1ea7d6ef5d74875876f8207732922d);
+            
+    
+            var marker_c70f17e7bd8cbcd874e788edb8a09b39 = L.marker(
+                [-5.151159806189789, -42.78012154665345],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_e5d506675fd6d7d262bb2f37e68fdbcd = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_89818e915fa7918ed1b191da8e8a8f8a = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_db3723345c4a9b8fb9617ca60bebeca5 = $(`<div id="html_db3723345c4a9b8fb9617ca60bebeca5" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-316/PI do km 0 ao 10</p><p>Trecho Concedido (ANTT): Não</p><p>Total de Acidentes (PRF): 139</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 24%</p><p>Total de Mortos (PRF): 8</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 50%</p><p>ICM (DNIT): Bom</p><p>Estado Geral da Rodovia (CNT): Não verificado</p><p>Pavimento (CNT): Não verificado</p><p>Sinalização (CNT): Não verificado</p><p>Geometria (CNT): Não verificado</p><p>Multas por Excesso de Carga (PRF): 6</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 2309</p><p>Volume Total de Veículos por Dia (DNIT): 7685</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Múltipla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): TERESINA/PI</p><p>Jurisdição (MPF): PR/PI</p></div></div>`)[0];
+                popup_89818e915fa7918ed1b191da8e8a8f8a.setContent(html_db3723345c4a9b8fb9617ca60bebeca5);
+            
+        
+
+        marker_c70f17e7bd8cbcd874e788edb8a09b39.bindPopup(popup_89818e915fa7918ed1b191da8e8a8f8a)
+        ;
+
+        
+    
+    
+            marker_c70f17e7bd8cbcd874e788edb8a09b39.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c70f17e7bd8cbcd874e788edb8a09b39.setIcon(icon_e5d506675fd6d7d262bb2f37e68fdbcd);
+            
+    
+            var marker_55b22bc97cfa82d89f07ede3582963e2 = L.marker(
+                [-12.872630778125, -38.43287649603126],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_f7d5b54480eb3b3bec5a9d0c524f4f55 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_718621245ffce0628d6d272e45af7883 = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_1380e44818a0f2d155c113eb9f8a14bd = $(`<div id="html_1380e44818a0f2d155c113eb9f8a14bd" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-324/BA do km 610 ao 620</p><p>Trecho Concedido (ANTT): Não</p><p>Total de Acidentes (PRF): 138</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 18%</p><p>Total de Mortos (PRF): 4</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 50%</p><p>ICM (DNIT): Bom</p><p>Estado Geral da Rodovia (CNT): Não verificado</p><p>Pavimento (CNT): Não verificado</p><p>Sinalização (CNT): Não verificado</p><p>Geometria (CNT): Não verificado</p><p>Multas por Excesso de Carga (PRF): 182</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): Não verificado</p><p>Volume Total de Veículos por Dia (DNIT): Não verificado</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Dupla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): SALVADOR/BA</p><p>Jurisdição (MPF): PR/BA</p></div></div>`)[0];
+                popup_718621245ffce0628d6d272e45af7883.setContent(html_1380e44818a0f2d155c113eb9f8a14bd);
+            
+        
+
+        marker_55b22bc97cfa82d89f07ede3582963e2.bindPopup(popup_718621245ffce0628d6d272e45af7883)
+        ;
+
+        
+    
+    
+            marker_55b22bc97cfa82d89f07ede3582963e2.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_55b22bc97cfa82d89f07ede3582963e2.setIcon(icon_f7d5b54480eb3b3bec5a9d0c524f4f55);
+            
+    
+            var marker_e80670d6fab5c05d77d0f2bf6c164893 = L.marker(
+                [-23.42608153590909, -51.92928638256493],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_170d2f327d0d9595a4157f87eb5dd4bd = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_0cd64b9fa6a70d5f600ab132a6909708 = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_e3fe38d0b9ed4853601df3d2903dd51e = $(`<div id="html_e3fe38d0b9ed4853601df3d2903dd51e" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-376/PR do km 170 ao 180</p><p>Trecho Concedido (ANTT): Não</p><p>Total de Acidentes (PRF): 128</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 12%</p><p>Total de Mortos (PRF): 1</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 100%</p><p>ICM (DNIT): Regular</p><p>Estado Geral da Rodovia (CNT): Não verificado</p><p>Pavimento (CNT): Não verificado</p><p>Sinalização (CNT): Não verificado</p><p>Geometria (CNT): Não verificado</p><p>Multas por Excesso de Carga (PRF): 0</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 8826</p><p>Volume Total de Veículos por Dia (DNIT): 30643</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Dupla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): MARINGA/PR</p><p>Jurisdição (MPF): PRM Maringá/PR</p></div></div>`)[0];
+                popup_0cd64b9fa6a70d5f600ab132a6909708.setContent(html_e3fe38d0b9ed4853601df3d2903dd51e);
+            
+        
+
+        marker_e80670d6fab5c05d77d0f2bf6c164893.bindPopup(popup_0cd64b9fa6a70d5f600ab132a6909708)
+        ;
+
+        
+    
+    
+            marker_e80670d6fab5c05d77d0f2bf6c164893.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e80670d6fab5c05d77d0f2bf6c164893.setIcon(icon_170d2f327d0d9595a4157f87eb5dd4bd);
+            
+    
+            var marker_f51541d09c69b836879bcba976e11d0b = L.marker(
+                [-5.095601617508651, -42.76058200529411],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_b3c259684c432e2bb61ea1b6f5f6c4d2 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_0df4577512956a6c2ee4906883ef7450 = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_ecfea26842105c8a75659834f02104e0 = $(`<div id="html_ecfea26842105c8a75659834f02104e0" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-343/PI do km 340 ao 350</p><p>Trecho Concedido (ANTT): Não</p><p>Total de Acidentes (PRF): 125</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 22%</p><p>Total de Mortos (PRF): 7</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 86%</p><p>ICM (DNIT): Bom</p><p>Estado Geral da Rodovia (CNT): Não verificado</p><p>Pavimento (CNT): Não verificado</p><p>Sinalização (CNT): Não verificado</p><p>Geometria (CNT): Não verificado</p><p>Multas por Excesso de Carga (PRF): 15</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 3096</p><p>Volume Total de Veículos por Dia (DNIT): 12149</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Simples</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): TERESINA/PI</p><p>Jurisdição (MPF): PR/PI</p></div></div>`)[0];
+                popup_0df4577512956a6c2ee4906883ef7450.setContent(html_ecfea26842105c8a75659834f02104e0);
+            
+        
+
+        marker_f51541d09c69b836879bcba976e11d0b.bindPopup(popup_0df4577512956a6c2ee4906883ef7450)
+        ;
+
+        
+    
+    
+            marker_f51541d09c69b836879bcba976e11d0b.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f51541d09c69b836879bcba976e11d0b.setIcon(icon_b3c259684c432e2bb61ea1b6f5f6c4d2);
+            
+    
+            var marker_8f85aa0e2f89d69ec488890841330b23 = L.marker(
+                [-24.11839363957597, -50.91143073459363],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_be595652accb7e5f4dd7ac63bb9f22a1 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_5a644dafbe6f54d9e8af5ddb63c875af = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_99423579f6bf50d7f291238e9a2ac7eb = $(`<div id="html_99423579f6bf50d7f291238e9a2ac7eb" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-376/PR do km 0 ao 10</p><p>Trecho Concedido (ANTT): Não</p><p>Total de Acidentes (PRF): 123</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 15%</p><p>Total de Mortos (PRF): 6</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 50%</p><p>ICM (DNIT): Regular</p><p>Estado Geral da Rodovia (CNT): Não verificado</p><p>Pavimento (CNT): Não verificado</p><p>Sinalização (CNT): Não verificado</p><p>Geometria (CNT): Não verificado</p><p>Multas por Excesso de Carga (PRF): 62</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 373</p><p>Volume Total de Veículos por Dia (DNIT): 3053</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Dupla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): SAO JOSE DOS PINHAIS/PR</p><p>Jurisdição (MPF): PR/PR</p></div></div>`)[0];
+                popup_5a644dafbe6f54d9e8af5ddb63c875af.setContent(html_99423579f6bf50d7f291238e9a2ac7eb);
+            
+        
+
+        marker_8f85aa0e2f89d69ec488890841330b23.bindPopup(popup_5a644dafbe6f54d9e8af5ddb63c875af)
+        ;
+
+        
+    
+    
+            marker_8f85aa0e2f89d69ec488890841330b23.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8f85aa0e2f89d69ec488890841330b23.setIcon(icon_be595652accb7e5f4dd7ac63bb9f22a1);
+            
+    
+            var marker_066d744116857711e4752f03a84f333b = L.marker(
+                [-9.362413060416667, -40.48389684270833],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_56cdb34d3dec657bcf1996f76bf98664 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_d591e976b1f1823710c29ab28256382b = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_e67437b0186c7810ac9596a9e49a13cd = $(`<div id="html_e67437b0186c7810ac9596a9e49a13cd" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-428/PE do km 180 ao 190</p><p>Trecho Concedido (ANTT): Não</p><p>Total de Acidentes (PRF): 106</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 8%</p><p>Total de Mortos (PRF): 2</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 50%</p><p>ICM (DNIT): Bom</p><p>Estado Geral da Rodovia (CNT): Não verificado</p><p>Pavimento (CNT): Não verificado</p><p>Sinalização (CNT): Não verificado</p><p>Geometria (CNT): Não verificado</p><p>Multas por Excesso de Carga (PRF): 156</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): Não verificado</p><p>Volume Total de Veículos por Dia (DNIT): Não verificado</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Dupla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): PETROLINA/PE</p><p>Jurisdição (MPF): PR Polo Petrolina-Juazeiro</p></div></div>`)[0];
+                popup_d591e976b1f1823710c29ab28256382b.setContent(html_e67437b0186c7810ac9596a9e49a13cd);
+            
+        
+
+        marker_066d744116857711e4752f03a84f333b.bindPopup(popup_d591e976b1f1823710c29ab28256382b)
+        ;
+
+        
+    
+    
+            marker_066d744116857711e4752f03a84f333b.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_066d744116857711e4752f03a84f333b.setIcon(icon_56cdb34d3dec657bcf1996f76bf98664);
+            
+    
+            var marker_6c3d60014180186c23c9028e73421d71 = L.marker(
+                [-10.43738528096234, -62.47537700824267],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_1dcdc24e9c6659901eebd3e9bbd9faca = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_f312821fc0279672f722018144164f3b = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_ba07991836ed2968f62c0e5f4e3772d2 = $(`<div id="html_ba07991836ed2968f62c0e5f4e3772d2" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-364/RO do km 420 ao 430</p><p>Trecho Concedido (ANTT): Não</p><p>Total de Acidentes (PRF): 104</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 12%</p><p>Total de Mortos (PRF): 2</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 100%</p><p>ICM (DNIT): Bom</p><p>Estado Geral da Rodovia (CNT): Não verificado</p><p>Pavimento (CNT): Não verificado</p><p>Sinalização (CNT): Não verificado</p><p>Geometria (CNT): Não verificado</p><p>Multas por Excesso de Carga (PRF): 18</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 2803</p><p>Volume Total de Veículos por Dia (DNIT): 9471</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Simples</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): JARU/RO</p><p>Jurisdição (MPF): PR/RO</p></div></div>`)[0];
+                popup_f312821fc0279672f722018144164f3b.setContent(html_ba07991836ed2968f62c0e5f4e3772d2);
+            
+        
+
+        marker_6c3d60014180186c23c9028e73421d71.bindPopup(popup_f312821fc0279672f722018144164f3b)
+        ;
+
+        
+    
+    
+            marker_6c3d60014180186c23c9028e73421d71.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6c3d60014180186c23c9028e73421d71.setIcon(icon_1dcdc24e9c6659901eebd3e9bbd9faca);
+            
+    
+            var marker_55a09cac4667e5562b0a24805407c83b = L.marker(
+                [-7.160060223831615, -34.86777860245704],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_5b2fafb3c841ce5025aba8edb2b121ce = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_fc8ad8f827ce0c87a3a4a96ffa09524b = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_ee573e25c80f2eba404acbeea28eb3e0 = $(`<div id="html_ee573e25c80f2eba404acbeea28eb3e0" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-230/PB do km 20 ao 30</p><p>Trecho Concedido (ANTT): Não</p><p>Total de Acidentes (PRF): 254</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 8%</p><p>Total de Mortos (PRF): 8</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 63%</p><p>ICM (DNIT): Bom</p><p>Estado Geral da Rodovia (CNT): Bom</p><p>Pavimento (CNT): Bom</p><p>Sinalização (CNT): Regular</p><p>Geometria (CNT): Regular</p><p>Multas por Excesso de Carga (PRF): 64</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 9297</p><p>Volume Total de Veículos por Dia (DNIT): 49499</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Dupla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): JOAO PESSOA/PB</p><p>Jurisdição (MPF): PR/PB</p></div></div>`)[0];
+                popup_fc8ad8f827ce0c87a3a4a96ffa09524b.setContent(html_ee573e25c80f2eba404acbeea28eb3e0);
+            
+        
+
+        marker_55a09cac4667e5562b0a24805407c83b.bindPopup(popup_fc8ad8f827ce0c87a3a4a96ffa09524b)
+        ;
+
+        
+    
+    
+            marker_55a09cac4667e5562b0a24805407c83b.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_55a09cac4667e5562b0a24805407c83b.setIcon(icon_5b2fafb3c841ce5025aba8edb2b121ce);
+            
+    
+            var marker_7cf24933abd43b4d074e1a77b4ee3283 = L.marker(
+                [-26.47458370734127, -48.99852880138889],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_99d01d6ca2e81c13c3b6a63ce3b11be2 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_2da232d264d9653eb7b48858d8f49cfb = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_e9f21285fe3323daa2b22cfecf309265 = $(`<div id="html_e9f21285fe3323daa2b22cfecf309265" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-280/SC do km 50 ao 60</p><p>Trecho Concedido (ANTT): Não</p><p>Total de Acidentes (PRF): 116</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 11%</p><p>Total de Mortos (PRF): 2</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 50%</p><p>ICM (DNIT): Bom</p><p>Estado Geral da Rodovia (CNT): Regular</p><p>Pavimento (CNT): Regular</p><p>Sinalização (CNT): Bom</p><p>Geometria (CNT): Regular</p><p>Multas por Excesso de Carga (PRF): 9</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 2834</p><p>Volume Total de Veículos por Dia (DNIT): 14637</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Dupla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): GUARAMIRIM/SC</p><p>Jurisdição (MPF): PRM Joinville/SC</p></div></div>`)[0];
+                popup_2da232d264d9653eb7b48858d8f49cfb.setContent(html_e9f21285fe3323daa2b22cfecf309265);
+            
+        
+
+        marker_7cf24933abd43b4d074e1a77b4ee3283.bindPopup(popup_2da232d264d9653eb7b48858d8f49cfb)
+        ;
+
+        
+    
+    
+            marker_7cf24933abd43b4d074e1a77b4ee3283.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7cf24933abd43b4d074e1a77b4ee3283.setIcon(icon_99d01d6ca2e81c13c3b6a63ce3b11be2);
+            
+    
+            var marker_50608c310a0efa9518024aaf5b565946 = L.marker(
+                [-27.64482563903909, -48.66558809085713],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_8b263ac3edbfc52689cb66c271e0c0c0 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_fc105485cc489fc6e0fcf628cd8b8166 = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_a0a2fe2f80a85d816e21540a84a52ff9 = $(`<div id="html_a0a2fe2f80a85d816e21540a84a52ff9" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-101/SC do km 210 ao 220</p><p>Trecho Concedido (ANTT): Sim para AUTOPISTA LITORAL SUL</p><p>Total de Acidentes (PRF): 341</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 9%</p><p>Total de Mortos (PRF): 4</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 50%</p><p>ICM (DNIT): Trecho não administrado pelo DNIT</p><p>Estado Geral da Rodovia (CNT): Bom</p><p>Pavimento (CNT): Bom</p><p>Sinalização (CNT): Ótimo</p><p>Geometria (CNT): Ótimo</p><p>Multas por Excesso de Carga (PRF): 3</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 13274</p><p>Volume Total de Veículos por Dia (DNIT): 57755</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Múltipla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): PALHOCA/SC</p><p>Jurisdição (MPF): PR/SC</p></div></div>`)[0];
+                popup_fc105485cc489fc6e0fcf628cd8b8166.setContent(html_a0a2fe2f80a85d816e21540a84a52ff9);
+            
+        
+
+        marker_50608c310a0efa9518024aaf5b565946.bindPopup(popup_fc105485cc489fc6e0fcf628cd8b8166)
+        ;
+
+        
+    
+    
+            marker_50608c310a0efa9518024aaf5b565946.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_50608c310a0efa9518024aaf5b565946.setIcon(icon_8b263ac3edbfc52689cb66c271e0c0c0);
+            
+    
+            var marker_a198310568c94484026e3b52ab369420 = L.marker(
+                [-27.00793988446308, -48.63094923026846],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_0ed1066f7fbe04f79fc2d94250602c5c = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_469f9780fbde33cf3977e3d73ba6d321 = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_11250bb492675477fb01e5c14e280f3e = $(`<div id="html_11250bb492675477fb01e5c14e280f3e" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-101/SC do km 130 ao 140</p><p>Trecho Concedido (ANTT): Sim para AUTOPISTA LITORAL SUL</p><p>Total de Acidentes (PRF): 279</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 14%</p><p>Total de Mortos (PRF): 8</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 50%</p><p>ICM (DNIT): Trecho não administrado pelo DNIT</p><p>Estado Geral da Rodovia (CNT): Bom</p><p>Pavimento (CNT): Bom</p><p>Sinalização (CNT): Ótimo</p><p>Geometria (CNT): Ótimo</p><p>Multas por Excesso de Carga (PRF): 4</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 14309</p><p>Volume Total de Veículos por Dia (DNIT): 80413</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Dupla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): BALNEARIO CAMBORIU/SC</p><p>Jurisdição (MPF): PRM Itajaí/SC</p></div></div>`)[0];
+                popup_469f9780fbde33cf3977e3d73ba6d321.setContent(html_11250bb492675477fb01e5c14e280f3e);
+            
+        
+
+        marker_a198310568c94484026e3b52ab369420.bindPopup(popup_469f9780fbde33cf3977e3d73ba6d321)
+        ;
+
+        
+    
+    
+            marker_a198310568c94484026e3b52ab369420.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a198310568c94484026e3b52ab369420.setIcon(icon_0ed1066f7fbe04f79fc2d94250602c5c);
+            
+    
+            var marker_93f21e8b82629371488936caf163e943 = L.marker(
+                [-22.87298997650927, -43.13210017883642],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_6cb246e3419fb929684ef8ffa82082a1 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_1db026f90d298768393e97494f7f5c7b = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_4eef97a3df4cd89b800dcad1e0547d66 = $(`<div id="html_4eef97a3df4cd89b800dcad1e0547d66" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-101/RJ do km 320 ao 330</p><p>Trecho Concedido (ANTT): Sim para ECOVIAS PONTE e AUTOPISTA FLUMINENSE</p><p>Total de Acidentes (PRF): 246</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 9%</p><p>Total de Mortos (PRF): 2</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 50%</p><p>ICM (DNIT): Trecho não administrado pelo DNIT</p><p>Estado Geral da Rodovia (CNT): Bom</p><p>Pavimento (CNT): Bom</p><p>Sinalização (CNT): Bom</p><p>Geometria (CNT): Bom</p><p>Multas por Excesso de Carga (PRF): 21</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 13015</p><p>Volume Total de Veículos por Dia (DNIT): 99242</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Dupla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): NITEROI/RJ</p><p>Jurisdição (MPF): PRM Niterói/RJ</p></div></div>`)[0];
+                popup_1db026f90d298768393e97494f7f5c7b.setContent(html_4eef97a3df4cd89b800dcad1e0547d66);
+            
+        
+
+        marker_93f21e8b82629371488936caf163e943.bindPopup(popup_1db026f90d298768393e97494f7f5c7b)
+        ;
+
+        
+    
+    
+            marker_93f21e8b82629371488936caf163e943.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_93f21e8b82629371488936caf163e943.setIcon(icon_6cb246e3419fb929684ef8ffa82082a1);
+            
+    
+            var marker_8264ef36c60f8ec52065c081c2e0831e = L.marker(
+                [-26.88687540900952, -48.71824717219047],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_9c5ae8ed187141099568549ac8ae81a5 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_d8cd1ce3af74e7a35581186e09422897 = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_d6076e9fd86973587e27ee24c3aac26e = $(`<div id="html_d6076e9fd86973587e27ee24c3aac26e" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-101/SC do km 110 ao 120</p><p>Trecho Concedido (ANTT): Sim para AUTOPISTA LITORAL SUL</p><p>Total de Acidentes (PRF): 241</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 23%</p><p>Total de Mortos (PRF): 7</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 71%</p><p>ICM (DNIT): Trecho não administrado pelo DNIT</p><p>Estado Geral da Rodovia (CNT): Bom</p><p>Pavimento (CNT): Bom</p><p>Sinalização (CNT): Ótimo</p><p>Geometria (CNT): Ótimo</p><p>Multas por Excesso de Carga (PRF): 4</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 20126</p><p>Volume Total de Veículos por Dia (DNIT): 68196</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Dupla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): ITAJAI/SC</p><p>Jurisdição (MPF): PRM Itajaí/SC</p></div></div>`)[0];
+                popup_d8cd1ce3af74e7a35581186e09422897.setContent(html_d6076e9fd86973587e27ee24c3aac26e);
+            
+        
+
+        marker_8264ef36c60f8ec52065c081c2e0831e.bindPopup(popup_d8cd1ce3af74e7a35581186e09422897)
+        ;
+
+        
+    
+    
+            marker_8264ef36c60f8ec52065c081c2e0831e.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8264ef36c60f8ec52065c081c2e0831e.setIcon(icon_9c5ae8ed187141099568549ac8ae81a5);
+            
+    
+            var marker_cafa294cf081de384b45f2ce5140d348 = L.marker(
+                [-26.95081333742072, -48.68980156596194],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_a7140facb45c73af625d20f9606d0f75 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_edb61a35a9691247dd12c674909d173d = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_fe32e2478a2e016925405a675046bdf5 = $(`<div id="html_fe32e2478a2e016925405a675046bdf5" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-101/SC do km 120 ao 130</p><p>Trecho Concedido (ANTT): Sim para AUTOPISTA LITORAL SUL</p><p>Total de Acidentes (PRF): 217</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 15%</p><p>Total de Mortos (PRF): 8</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 63%</p><p>ICM (DNIT): Trecho não administrado pelo DNIT</p><p>Estado Geral da Rodovia (CNT): Bom</p><p>Pavimento (CNT): Bom</p><p>Sinalização (CNT): Ótimo</p><p>Geometria (CNT): Ótimo</p><p>Multas por Excesso de Carga (PRF): 5</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 16270</p><p>Volume Total de Veículos por Dia (DNIT): 68065</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Dupla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): ITAJAI/SC</p><p>Jurisdição (MPF): PRM Itajaí/SC</p></div></div>`)[0];
+                popup_edb61a35a9691247dd12c674909d173d.setContent(html_fe32e2478a2e016925405a675046bdf5);
+            
+        
+
+        marker_cafa294cf081de384b45f2ce5140d348.bindPopup(popup_edb61a35a9691247dd12c674909d173d)
+        ;
+
+        
+    
+    
+            marker_cafa294cf081de384b45f2ce5140d348.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cafa294cf081de384b45f2ce5140d348.setIcon(icon_a7140facb45c73af625d20f9606d0f75);
+            
+    
+            var marker_78c1e481a31935855d21ad85269f383e = L.marker(
+                [-27.08323793305239, -48.60622667676538],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_ebdc0b89cd17e7a40633c0547ecbceeb = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_c4dd4b01dd985a5672cf79adb594b050 = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_96463813355debb9108786e3900b7f6b = $(`<div id="html_96463813355debb9108786e3900b7f6b" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-101/SC do km 140 ao 150</p><p>Trecho Concedido (ANTT): Sim para AUTOPISTA LITORAL SUL</p><p>Total de Acidentes (PRF): 202</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 18%</p><p>Total de Mortos (PRF): 8</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 75%</p><p>ICM (DNIT): Trecho não administrado pelo DNIT</p><p>Estado Geral da Rodovia (CNT): Bom</p><p>Pavimento (CNT): Bom</p><p>Sinalização (CNT): Ótimo</p><p>Geometria (CNT): Ótimo</p><p>Multas por Excesso de Carga (PRF): 6</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 14309</p><p>Volume Total de Veículos por Dia (DNIT): 80413</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Dupla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): ITAPEMA/SC</p><p>Jurisdição (MPF): PRM Itajaí/SC</p></div></div>`)[0];
+                popup_c4dd4b01dd985a5672cf79adb594b050.setContent(html_96463813355debb9108786e3900b7f6b);
+            
+        
+
+        marker_78c1e481a31935855d21ad85269f383e.bindPopup(popup_c4dd4b01dd985a5672cf79adb594b050)
+        ;
+
+        
+    
+    
+            marker_78c1e481a31935855d21ad85269f383e.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_78c1e481a31935855d21ad85269f383e.setIcon(icon_ebdc0b89cd17e7a40633c0547ecbceeb);
+            
+    
+            var marker_3d0f22166ffb39f584eec52b729ef8a4 = L.marker(
+                [-20.33111595873893, -40.40458179369469],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_24d295d002701821b62bf2b2f5f00332 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_a6d1849829e087e7b7d0b87e85f61477 = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_f019ba9cb0323571c54c2d1916d586db = $(`<div id="html_f019ba9cb0323571c54c2d1916d586db" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-101/ES do km 290 ao 300</p><p>Trecho Concedido (ANTT): Sim para ECOVIAS CAPIXABA</p><p>Total de Acidentes (PRF): 200</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 25%</p><p>Total de Mortos (PRF): 7</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 71%</p><p>ICM (DNIT): Trecho não administrado pelo DNIT</p><p>Estado Geral da Rodovia (CNT): Bom</p><p>Pavimento (CNT): Bom</p><p>Sinalização (CNT): Bom</p><p>Geometria (CNT): Bom</p><p>Multas por Excesso de Carga (PRF): 26</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 3579</p><p>Volume Total de Veículos por Dia (DNIT): 15394</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Dupla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): CARIACICA/ES</p><p>Jurisdição (MPF): PR/ES</p></div></div>`)[0];
+                popup_a6d1849829e087e7b7d0b87e85f61477.setContent(html_f019ba9cb0323571c54c2d1916d586db);
+            
+        
+
+        marker_3d0f22166ffb39f584eec52b729ef8a4.bindPopup(popup_a6d1849829e087e7b7d0b87e85f61477)
+        ;
+
+        
+    
+    
+            marker_3d0f22166ffb39f584eec52b729ef8a4.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3d0f22166ffb39f584eec52b729ef8a4.setIcon(icon_24d295d002701821b62bf2b2f5f00332);
+            
+    
+            var marker_5763b723c76985fa387c876f978077b6 = L.marker(
+                [-25.55711447327473, -49.29542638997803],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_00e621eaead19704b8fbd6eec5b87610 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_82b203f232cfb3eba7863785abdfd813 = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_74bc30cf75255f9eb543a18ca8f35c4e = $(`<div id="html_74bc30cf75255f9eb543a18ca8f35c4e" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-116/PR do km 110 ao 120</p><p>Trecho Concedido (ANTT): Sim para AUTOPISTA LITORAL SUL e AUTOPISTA PLANALTO SUL</p><p>Total de Acidentes (PRF): 189</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 25%</p><p>Total de Mortos (PRF): 6</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 83%</p><p>ICM (DNIT): Não verificado</p><p>Estado Geral da Rodovia (CNT): Bom</p><p>Pavimento (CNT): Bom</p><p>Sinalização (CNT): Bom</p><p>Geometria (CNT): Bom</p><p>Multas por Excesso de Carga (PRF): 41</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): Não verificado</p><p>Volume Total de Veículos por Dia (DNIT): Não verificado</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Dupla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): CURITIBA/PR</p><p>Jurisdição (MPF): PR/PR</p></div></div>`)[0];
+                popup_82b203f232cfb3eba7863785abdfd813.setContent(html_74bc30cf75255f9eb543a18ca8f35c4e);
+            
+        
+
+        marker_5763b723c76985fa387c876f978077b6.bindPopup(popup_82b203f232cfb3eba7863785abdfd813)
+        ;
+
+        
+    
+    
+            marker_5763b723c76985fa387c876f978077b6.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5763b723c76985fa387c876f978077b6.setIcon(icon_00e621eaead19704b8fbd6eec5b87610);
+            
+    
+            var marker_a9de34ab81c920c799956c34661f1ae6 = L.marker(
+                [-19.3682102094023, -40.06548043498852],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_7e6b492bbc9896a55bc9fd95a1ea8f80 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_e4c366fd7ebdadc60993236a9177b756 = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_a0fdf18502ddf3ad1651e217613e281f = $(`<div id="html_a0fdf18502ddf3ad1651e217613e281f" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-101/ES do km 140 ao 150</p><p>Trecho Concedido (ANTT): Sim para ECOVIAS CAPIXABA</p><p>Total de Acidentes (PRF): 188</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 15%</p><p>Total de Mortos (PRF): 7</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 57%</p><p>ICM (DNIT): Trecho não administrado pelo DNIT</p><p>Estado Geral da Rodovia (CNT): Bom</p><p>Pavimento (CNT): Bom</p><p>Sinalização (CNT): Bom</p><p>Geometria (CNT): Bom</p><p>Multas por Excesso de Carga (PRF): 6</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 3018</p><p>Volume Total de Veículos por Dia (DNIT): 8872</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Dupla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): LINHARES/ES</p><p>Jurisdição (MPF): PRM Linhares/ES</p></div></div>`)[0];
+                popup_e4c366fd7ebdadc60993236a9177b756.setContent(html_a0fdf18502ddf3ad1651e217613e281f);
+            
+        
+
+        marker_a9de34ab81c920c799956c34661f1ae6.bindPopup(popup_e4c366fd7ebdadc60993236a9177b756)
+        ;
+
+        
+    
+    
+            marker_a9de34ab81c920c799956c34661f1ae6.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a9de34ab81c920c799956c34661f1ae6.setIcon(icon_7e6b492bbc9896a55bc9fd95a1ea8f80);
+            
+    
+            var marker_b966c0487ceaabc6483c382f9dd22f3b = L.marker(
+                [-25.62717345956204, -49.31371805360097],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_541c7c3c36124d35fca3d361ef59493f = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_cf704e72e3b11a098223cd6095fede03 = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_94f5fe1e1a58d39d907766314f513fdb = $(`<div id="html_94f5fe1e1a58d39d907766314f513fdb" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-116/PR do km 120 ao 130</p><p>Trecho Concedido (ANTT): Sim para AUTOPISTA PLANALTO SUL</p><p>Total de Acidentes (PRF): 169</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 12%</p><p>Total de Mortos (PRF): 3</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 67%</p><p>ICM (DNIT): Trecho não administrado pelo DNIT</p><p>Estado Geral da Rodovia (CNT): Bom</p><p>Pavimento (CNT): Bom</p><p>Sinalização (CNT): Bom</p><p>Geometria (CNT): Bom</p><p>Multas por Excesso de Carga (PRF): 41</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 9480</p><p>Volume Total de Veículos por Dia (DNIT): 64490</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Dupla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): FAZENDA RIO GRANDE/PR</p><p>Jurisdição (MPF): PR/PR</p></div></div>`)[0];
+                popup_cf704e72e3b11a098223cd6095fede03.setContent(html_94f5fe1e1a58d39d907766314f513fdb);
+            
+        
+
+        marker_b966c0487ceaabc6483c382f9dd22f3b.bindPopup(popup_cf704e72e3b11a098223cd6095fede03)
+        ;
+
+        
+    
+    
+            marker_b966c0487ceaabc6483c382f9dd22f3b.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b966c0487ceaabc6483c382f9dd22f3b.setIcon(icon_541c7c3c36124d35fca3d361ef59493f);
+            
+    
+            var marker_1b7eea7d093a3637d711e091bb5b7346 = L.marker(
+                [-23.6756972794517, -46.86043648582246],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_8d786a96dc5de0415bc4e95bd3623954 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_dfdf2998f93fb1f485587ce39e89fa24 = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_22fef8e5baae2fd17cf98ff42eafe40a = $(`<div id="html_22fef8e5baae2fd17cf98ff42eafe40a" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-116/SP do km 280 ao 290</p><p>Trecho Concedido (ANTT): Sim para AUTOPISTA REGIS BITTENCOURT</p><p>Total de Acidentes (PRF): 166</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 20%</p><p>Total de Mortos (PRF): 7</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 71%</p><p>ICM (DNIT): Trecho não administrado pelo DNIT</p><p>Estado Geral da Rodovia (CNT): Bom</p><p>Pavimento (CNT): Bom</p><p>Sinalização (CNT): Ótimo</p><p>Geometria (CNT): Bom</p><p>Multas por Excesso de Carga (PRF): 69</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 12953</p><p>Volume Total de Veículos por Dia (DNIT): 29910</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Dupla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): EMBU DAS ARTES/SP</p><p>Jurisdição (MPF): PR/SP</p></div></div>`)[0];
+                popup_dfdf2998f93fb1f485587ce39e89fa24.setContent(html_22fef8e5baae2fd17cf98ff42eafe40a);
+            
+        
+
+        marker_1b7eea7d093a3637d711e091bb5b7346.bindPopup(popup_dfdf2998f93fb1f485587ce39e89fa24)
+        ;
+
+        
+    
+    
+            marker_1b7eea7d093a3637d711e091bb5b7346.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1b7eea7d093a3637d711e091bb5b7346.setIcon(icon_8d786a96dc5de0415bc4e95bd3623954);
+            
+    
+            var marker_aa3b4e730e8ea8fc7c9b97556f388b83 = L.marker(
+                [-20.2568381355548, -40.37943331673003],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_d80740c1790e7afdc86b5b01ec08b50e = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_8959260cba92153589e4b1783ed4b209 = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_79f68189dc9bd14e1d8ba236e1537f24 = $(`<div id="html_79f68189dc9bd14e1d8ba236e1537f24" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-101/ES do km 280 ao 290</p><p>Trecho Concedido (ANTT): Sim para ECOVIAS CAPIXABA</p><p>Total de Acidentes (PRF): 143</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 26%</p><p>Total de Mortos (PRF): 3</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 67%</p><p>ICM (DNIT): Trecho não administrado pelo DNIT</p><p>Estado Geral da Rodovia (CNT): Bom</p><p>Pavimento (CNT): Bom</p><p>Sinalização (CNT): Bom</p><p>Geometria (CNT): Bom</p><p>Multas por Excesso de Carga (PRF): 29</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 2159</p><p>Volume Total de Veículos por Dia (DNIT): 8450</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Dupla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): CARIACICA/ES</p><p>Jurisdição (MPF): PR/ES</p></div></div>`)[0];
+                popup_8959260cba92153589e4b1783ed4b209.setContent(html_79f68189dc9bd14e1d8ba236e1537f24);
+            
+        
+
+        marker_aa3b4e730e8ea8fc7c9b97556f388b83.bindPopup(popup_8959260cba92153589e4b1783ed4b209)
+        ;
+
+        
+    
+    
+            marker_aa3b4e730e8ea8fc7c9b97556f388b83.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aa3b4e730e8ea8fc7c9b97556f388b83.setIcon(icon_d80740c1790e7afdc86b5b01ec08b50e);
+            
+    
+            var marker_dd091b69a5e8aabfdd9e244a499ee2c9 = L.marker(
+                [-23.24271927335548, -45.92754116315615],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_ef66b322d200bd3a2d37b4232851f4fa = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_c4506764aab20e8b12a87ad662253762 = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_2c330e98d4af16d9cca42be6c8fd750e = $(`<div id="html_2c330e98d4af16d9cca42be6c8fd750e" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-116/SP do km 150 ao 160</p><p>Trecho Concedido (ANTT): Sim para RIOSP</p><p>Total de Acidentes (PRF): 132</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 22%</p><p>Total de Mortos (PRF): 5</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 60%</p><p>ICM (DNIT): Trecho não administrado pelo DNIT</p><p>Estado Geral da Rodovia (CNT): Bom</p><p>Pavimento (CNT): Bom</p><p>Sinalização (CNT): Ótimo</p><p>Geometria (CNT): Bom</p><p>Multas por Excesso de Carga (PRF): 42</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 17516</p><p>Volume Total de Veículos por Dia (DNIT): 56308</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Dupla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): SAO JOSE DOS CAMPOS/SP</p><p>Jurisdição (MPF): PRM São José dos Campos/SP</p></div></div>`)[0];
+                popup_c4506764aab20e8b12a87ad662253762.setContent(html_2c330e98d4af16d9cca42be6c8fd750e);
+            
+        
+
+        marker_dd091b69a5e8aabfdd9e244a499ee2c9.bindPopup(popup_c4506764aab20e8b12a87ad662253762)
+        ;
+
+        
+    
+    
+            marker_dd091b69a5e8aabfdd9e244a499ee2c9.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dd091b69a5e8aabfdd9e244a499ee2c9.setIcon(icon_ef66b322d200bd3a2d37b4232851f4fa);
+            
+    
+            var marker_46ebc650beb447be3e196591d1713281 = L.marker(
+                [-25.30124470782442, -49.03355405396947],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_ae07f995158a22afce3bbeafac758ba1 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_7c5835a3d1b1d9e6fdcb8b6cbdae6808 = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_88eb5af2e18df46c1d52cc0ddc171a0e = $(`<div id="html_88eb5af2e18df46c1d52cc0ddc171a0e" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-116/PR do km 10 ao 20</p><p>Trecho Concedido (ANTT): Sim para AUTOPISTA REGIS BITTENCOURT</p><p>Total de Acidentes (PRF): 124</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 15%</p><p>Total de Mortos (PRF): 4</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 50%</p><p>ICM (DNIT): Trecho não administrado pelo DNIT</p><p>Estado Geral da Rodovia (CNT): Bom</p><p>Pavimento (CNT): Bom</p><p>Sinalização (CNT): Bom</p><p>Geometria (CNT): Bom</p><p>Multas por Excesso de Carga (PRF): 51</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 6427</p><p>Volume Total de Veículos por Dia (DNIT): 16461</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Dupla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): COLOMBO/PR</p><p>Jurisdição (MPF): PR/PR</p></div></div>`)[0];
+                popup_7c5835a3d1b1d9e6fdcb8b6cbdae6808.setContent(html_88eb5af2e18df46c1d52cc0ddc171a0e);
+            
+        
+
+        marker_46ebc650beb447be3e196591d1713281.bindPopup(popup_7c5835a3d1b1d9e6fdcb8b6cbdae6808)
+        ;
+
+        
+    
+    
+            marker_46ebc650beb447be3e196591d1713281.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_46ebc650beb447be3e196591d1713281.setIcon(icon_ae07f995158a22afce3bbeafac758ba1);
+            
+    
+            var marker_ad9277652f16f017d0b2161eda8afceb = L.marker(
+                [-20.82161851294304, -49.36502393528481],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_aa4b261478c1caec02175f2822042ced = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_0bb033d1a3cdbc302b49d9d4122d857a = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_d364d45e53e5f59968b3698b669d7e2b = $(`<div id="html_d364d45e53e5f59968b3698b669d7e2b" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-153/SP do km 60 ao 70</p><p>Trecho Concedido (ANTT): Sim para TRANSBRASILIANA</p><p>Total de Acidentes (PRF): 124</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 18%</p><p>Total de Mortos (PRF): 6</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 50%</p><p>ICM (DNIT): Trecho não administrado pelo DNIT</p><p>Estado Geral da Rodovia (CNT): Bom</p><p>Pavimento (CNT): Bom</p><p>Sinalização (CNT): Bom</p><p>Geometria (CNT): Regular</p><p>Multas por Excesso de Carga (PRF): 41</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 3073</p><p>Volume Total de Veículos por Dia (DNIT): 9293</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Dupla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): SAO JOSE DO RIO PRETO/SP</p><p>Jurisdição (MPF): PRM São José do Rio Preto/SP</p></div></div>`)[0];
+                popup_0bb033d1a3cdbc302b49d9d4122d857a.setContent(html_d364d45e53e5f59968b3698b669d7e2b);
+            
+        
+
+        marker_ad9277652f16f017d0b2161eda8afceb.bindPopup(popup_0bb033d1a3cdbc302b49d9d4122d857a)
+        ;
+
+        
+    
+    
+            marker_ad9277652f16f017d0b2161eda8afceb.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ad9277652f16f017d0b2161eda8afceb.setIcon(icon_aa4b261478c1caec02175f2822042ced);
+            
+    
+            var marker_a184ae21d8841c3dafa0f230d85ae9fc = L.marker(
+                [-26.80169950757575, -48.68395802920454],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_9fec2779957c3c32998873ac6a313e24 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_529d6baadb985af1fde5dfa191bb892f = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_5c8b593e09fdae3a31e6b02af9341373 = $(`<div id="html_5c8b593e09fdae3a31e6b02af9341373" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-101/SC do km 100 ao 110</p><p>Trecho Concedido (ANTT): Sim para AUTOPISTA LITORAL SUL</p><p>Total de Acidentes (PRF): 118</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 26%</p><p>Total de Mortos (PRF): 8</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 50%</p><p>ICM (DNIT): Trecho não administrado pelo DNIT</p><p>Estado Geral da Rodovia (CNT): Bom</p><p>Pavimento (CNT): Bom</p><p>Sinalização (CNT): Ótimo</p><p>Geometria (CNT): Ótimo</p><p>Multas por Excesso de Carga (PRF): 37</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 16379</p><p>Volume Total de Veículos por Dia (DNIT): 58502</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Múltipla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): BALNEARIO PICARRAS/SC</p><p>Jurisdição (MPF): PRM Itajaí/SC</p></div></div>`)[0];
+                popup_529d6baadb985af1fde5dfa191bb892f.setContent(html_5c8b593e09fdae3a31e6b02af9341373);
+            
+        
+
+        marker_a184ae21d8841c3dafa0f230d85ae9fc.bindPopup(popup_529d6baadb985af1fde5dfa191bb892f)
+        ;
+
+        
+    
+    
+            marker_a184ae21d8841c3dafa0f230d85ae9fc.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a184ae21d8841c3dafa0f230d85ae9fc.setIcon(icon_9fec2779957c3c32998873ac6a313e24);
+            
+    
+            var marker_d252c1a8eace2086ef38bec0019936b8 = L.marker(
+                [-23.41593516974638, -46.36798252612319],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_5de4945a74b2c3f8fb7ad7c7eac96757 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_e7df44433d1afbc1ef6c34a8562fd622 = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_b1c7135ae91a4b4e76dc7bf4bad1bb73 = $(`<div id="html_b1c7135ae91a4b4e76dc7bf4bad1bb73" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-116/SP do km 200 ao 210</p><p>Trecho Concedido (ANTT): Sim para RIOSP</p><p>Total de Acidentes (PRF): 117</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 24%</p><p>Total de Mortos (PRF): 6</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 50%</p><p>ICM (DNIT): Trecho não administrado pelo DNIT</p><p>Estado Geral da Rodovia (CNT): Bom</p><p>Pavimento (CNT): Bom</p><p>Sinalização (CNT): Ótimo</p><p>Geometria (CNT): Bom</p><p>Multas por Excesso de Carga (PRF): 30</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 10256</p><p>Volume Total de Veículos por Dia (DNIT): 32770</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Múltipla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): ARUJA/SP</p><p>Jurisdição (MPF): PRM Guarulhos/SP</p></div></div>`)[0];
+                popup_e7df44433d1afbc1ef6c34a8562fd622.setContent(html_b1c7135ae91a4b4e76dc7bf4bad1bb73);
+            
+        
+
+        marker_d252c1a8eace2086ef38bec0019936b8.bindPopup(popup_e7df44433d1afbc1ef6c34a8562fd622)
+        ;
+
+        
+    
+    
+            marker_d252c1a8eace2086ef38bec0019936b8.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d252c1a8eace2086ef38bec0019936b8.setIcon(icon_5de4945a74b2c3f8fb7ad7c7eac96757);
+            
+    
+            var marker_bd1c9089c5b25bef6652043890098bc2 = L.marker(
+                [-23.05355046026316, -45.6007730293421],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_7290cf2a9764fcaa494134618364ea05 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_00f074e56d0540726314b18a30bd904c = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_95f7e53fa0f6d059a877aab4dd2dfda0 = $(`<div id="html_95f7e53fa0f6d059a877aab4dd2dfda0" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-116/SP do km 110 ao 120</p><p>Trecho Concedido (ANTT): Sim para RIOSP</p><p>Total de Acidentes (PRF): 112</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 31%</p><p>Total de Mortos (PRF): 3</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 67%</p><p>ICM (DNIT): Trecho não administrado pelo DNIT</p><p>Estado Geral da Rodovia (CNT): Bom</p><p>Pavimento (CNT): Bom</p><p>Sinalização (CNT): Ótimo</p><p>Geometria (CNT): Bom</p><p>Multas por Excesso de Carga (PRF): 7</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 16886</p><p>Volume Total de Veículos por Dia (DNIT): 37543</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Dupla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): TAUBATE/SP</p><p>Jurisdição (MPF): PRM Taubaté/SP</p></div></div>`)[0];
+                popup_00f074e56d0540726314b18a30bd904c.setContent(html_95f7e53fa0f6d059a877aab4dd2dfda0);
+            
+        
+
+        marker_bd1c9089c5b25bef6652043890098bc2.bindPopup(popup_00f074e56d0540726314b18a30bd904c)
+        ;
+
+        
+    
+    
+            marker_bd1c9089c5b25bef6652043890098bc2.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bd1c9089c5b25bef6652043890098bc2.setIcon(icon_7290cf2a9764fcaa494134618364ea05);
+            
+    
+            var marker_d9b98ae4d1096755d4222a630db63527 = L.marker(
+                [-23.37167908668293, -46.56116167746341],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_60fc40583f942c2a1306680fbb000581 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_f8fdb6484a965fd7c0103ec19df0468e = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_1fecb7ad2cd4f12f26b17bfe6a8fb2d5 = $(`<div id="html_1fecb7ad2cd4f12f26b17bfe6a8fb2d5" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-381/SP do km 70 ao 80</p><p>Trecho Concedido (ANTT): Sim para AUTOPISTA FERNÃO DIAS</p><p>Total de Acidentes (PRF): 108</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 19%</p><p>Total de Mortos (PRF): 2</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 50%</p><p>ICM (DNIT): Trecho não administrado pelo DNIT</p><p>Estado Geral da Rodovia (CNT): Não verificado</p><p>Pavimento (CNT): Não verificado</p><p>Sinalização (CNT): Não verificado</p><p>Geometria (CNT): Não verificado</p><p>Multas por Excesso de Carga (PRF): 141</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 9393</p><p>Volume Total de Veículos por Dia (DNIT): 53897</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Dupla</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Curva</p><p>Município da Maioria dos Acidentes (PRF): SAO PAULO/SP</p><p>Jurisdição (MPF): PR/SP</p></div></div>`)[0];
+                popup_f8fdb6484a965fd7c0103ec19df0468e.setContent(html_1fecb7ad2cd4f12f26b17bfe6a8fb2d5);
+            
+        
+
+        marker_d9b98ae4d1096755d4222a630db63527.bindPopup(popup_f8fdb6484a965fd7c0103ec19df0468e)
+        ;
+
+        
+    
+    
+            marker_d9b98ae4d1096755d4222a630db63527.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d9b98ae4d1096755d4222a630db63527.setIcon(icon_60fc40583f942c2a1306680fbb000581);
+            
+    
+            var marker_4deb403d082420d6e7cb77237e1d1994 = L.marker(
+                [-11.868092137, -55.49653156195456],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+        var icon_95cae80c596b232eb9ab39b878ae2366 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+        var popup_7069406736c255a9b5e0bfa70bd13d2a = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_197c600c9dc52817495c82d4b945f7b9 = $(`<div id="html_197c600c9dc52817495c82d4b945f7b9" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;width: 250px;'><p>Localização do Trecho (PRF): BR-163/MT do km 830 ao 840</p><p>Trecho Concedido (ANTT): Sim para CRO</p><p>Total de Acidentes (PRF): 101</p><p>% de Acidentes Envolvendo Veículos de Carga (PRF): 13%</p><p>Total de Mortos (PRF): 2</p><p>% de Mortos em Acidentes Envolvendo Veículos de Carga (PRF): 50%</p><p>ICM (DNIT): Trecho não administrado pelo DNIT</p><p>Estado Geral da Rodovia (CNT): Bom</p><p>Pavimento (CNT): Regular</p><p>Sinalização (CNT): Bom</p><p>Geometria (CNT): Bom</p><p>Multas por Excesso de Carga (PRF): 134</p><p>Volume de Caminhões e Ônibus por Dia (DNIT): 4390</p><p>Volume Total de Veículos por Dia (DNIT): 11629</p><p>Tipo de Pista Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Simples</p><p>Inclinação Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Plano</p><p>Traçado Predominante nos Locais de Acidente Envolvendo Veículos de Carga (PRF): Reta</p><p>Município da Maioria dos Acidentes (PRF): SINOP/MT</p><p>Jurisdição (MPF): PRM Sinop/MT</p></div></div>`)[0];
+                popup_7069406736c255a9b5e0bfa70bd13d2a.setContent(html_197c600c9dc52817495c82d4b945f7b9);
+            
+        
+
+        marker_4deb403d082420d6e7cb77237e1d1994.bindPopup(popup_7069406736c255a9b5e0bfa70bd13d2a)
+        ;
+
+        
+    
+    
+            marker_4deb403d082420d6e7cb77237e1d1994.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4deb403d082420d6e7cb77237e1d1994.setIcon(icon_95cae80c596b232eb9ab39b878ae2366);
+            
+    
+            var marker_b2a58f7df117751226b3c8871e0979c1 = L.marker(
+                [-7.0, -32.0],
+                {
+}
+            ).addTo(map_2117acd1a0d3cc8bd2528030dff8093f);
+        
+    
+            var div_icon_6ac88b5414b850cdc0591046a817cd5c = L.divIcon({
+  "html": "\n    \u003cdiv style=\"position: absolute;\n                 top: 0px; left: 0px; width: 450px;\n                 background-color:peachpuff; border:2px solid grey; z-index:9999; font-size:14px;\n                 padding: 10px;\"\u003e\n        \u003cdiv style=\"font-size:16px; text-align: center;font-weight: bold; font-style: italic; color: darkred; text-decoration: underline;\"\u003e\n            \u003cimg src=\"https://github.com/user-attachments/assets/5a42f3bf-ca72-4542-9ca2-a11fd9d5b6d2\" style=\"width:400px;height:80px;\"\u003e\u003cbr\u003e\n            \u003cp\u003e\u003c/p\u003e\u003cbr\u003e\n            \u003cp\u003eAcidentes envolvendo ve\u00edculos de carga por trecho de rodovia e fiscaliza\u00e7\u00e3o de excesso de carga (2025)\u003c/p\u003e\u003cbr\u003e\n        \u003c/div\u003e\n        \u003cstrong\u003eLEGENDA:\u003c/strong\u003e\u003cbr\u003e\n        \u003cimg src=\"https://img.icons8.com/plasticine/100/000000/truck.png\" style=\"width:20px;height:20px;\"\u003e - Trecho de rodovia com mais de 100 acidentes e % de mortos em acidentes envolvendo ve\u00edculos de carga maior que a m\u00e9dia nacional.\u003cbr\u003e\n        \u003cimg src=\"https://github.com/user-attachments/assets/fc1aa418-aee9-42cf-9c49-b4f7b56be48e\" style=\"width:40px;height:20px;\"\u003e - Posto de pesagem da ANTT.\u003cbr\u003e\n        \u003cimg src=\"https://github.com/user-attachments/assets/1da0d37c-0904-4e55-bb55-4b8c5321bcab\" style=\"width:30px;height:15px;\"\u003e - Posto de pesagem do DNIT.\u003cbr\u003e\n        \u003cimg src=\"https://github.com/user-attachments/assets/7b209719-c3e9-4538-b2ec-6ac7faea68ba\" style=\"width:20px;height:20px;\"\u003e - Unidade Operacional da PRF.\u003cbr\u003e\n        \u003cp\u003e\u003c/p\u003e\u003cbr\u003e\n        \u003cdiv style=\"text-align: center;\"\u003e\n            \u003cimg src=\"https://github.com/user-attachments/assets/f92f2898-9e8b-443e-8c66-3b8c28e474d8\" style=\"width:400px;height:70px;\"\u003e\u003cbr\u003e\n        \u003c/div\u003e\n    \u003c/div\u003e\n",
+  "className": "empty",
+});
+        
+    
+                marker_b2a58f7df117751226b3c8871e0979c1.setIcon(div_icon_6ac88b5414b850cdc0591046a817cd5c);
+            
+</script>
+</html>
