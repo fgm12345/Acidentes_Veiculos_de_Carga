@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7ccbca11c7f5850fae64e99d8a1e9591 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7ccbca11c7f5850fae64e99d8a1e9591" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7ccbca11c7f5850fae64e99d8a1e9591 = L.map(
+                "map_7ccbca11c7f5850fae64e99d8a1e9591",
+                {
+                    center: [-15.7801, -47.9292],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c0eb4e670ba92535e40e9d0eeb48bb7a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c0eb4e670ba92535e40e9d0eeb48bb7a.addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+            var marker_1fe59510561f30e6aa03198b868ec9a9 = L.marker(
+                [-15.792247898840971, -48.18377517636118],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_0be95091a970f46e24c04ff11bcd560f = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_1fe59510561f30e6aa03198b868ec9a9.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-070/DF do km 10 ao 20<br>
+            <b>Acidentes:</b> 160<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 13<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 8%<br>
+            <b>Mortos em Acidentes:</b> 3<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 2<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 67%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1fe59510561f30e6aa03198b868ec9a9.setIcon(icon_0be95091a970f46e24c04ff11bcd560f);
+            
+    
+            var marker_eb242c25396df430be4db1f09f47b551 = L.marker(
+                [-19.368210209402296, -40.065480434988515],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_fb4f74695f075f30b581653076601677 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_eb242c25396df430be4db1f09f47b551.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-101/ES do km 140 ao 150<br>
+            <b>Acidentes:</b> 188<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 29<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 15%<br>
+            <b>Mortos em Acidentes:</b> 7<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 4<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 57%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eb242c25396df430be4db1f09f47b551.setIcon(icon_fb4f74695f075f30b581653076601677);
+            
+    
+            var marker_484c3678269597013cc34f97025f9c2b = L.marker(
+                [-20.256838135554798, -40.37943331673003],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_3ec74da5672fd3fb71e067bc51dafcec = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_484c3678269597013cc34f97025f9c2b.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-101/ES do km 280 ao 290<br>
+            <b>Acidentes:</b> 143<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 37<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 26%<br>
+            <b>Mortos em Acidentes:</b> 3<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 2<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 67%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_484c3678269597013cc34f97025f9c2b.setIcon(icon_3ec74da5672fd3fb71e067bc51dafcec);
+            
+    
+            var marker_29d7162f1cc7e0b58525caba277969be = L.marker(
+                [-20.331115958738934, -40.40458179369469],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_eafdcbb42a74170a2a5e3e0cb96778e9 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_29d7162f1cc7e0b58525caba277969be.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-101/ES do km 290 ao 300<br>
+            <b>Acidentes:</b> 200<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 50<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 25%<br>
+            <b>Mortos em Acidentes:</b> 7<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 5<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 71%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_29d7162f1cc7e0b58525caba277969be.setIcon(icon_eafdcbb42a74170a2a5e3e0cb96778e9);
+            
+    
+            var marker_4b9191ffbc0db0c426d14ae961be7a35 = L.marker(
+                [-22.872989976509274, -43.132100178836424],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_7cf2a812d7102d7bcf98228c83fbb495 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_4b9191ffbc0db0c426d14ae961be7a35.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-101/RJ do km 320 ao 330<br>
+            <b>Acidentes:</b> 246<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 22<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 9%<br>
+            <b>Mortos em Acidentes:</b> 2<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 1<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 50%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4b9191ffbc0db0c426d14ae961be7a35.setIcon(icon_7cf2a812d7102d7bcf98228c83fbb495);
+            
+    
+            var marker_09721a2b34cc4c800d4271a699a81355 = L.marker(
+                [-26.801699507575755, -48.68395802920454],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_da8d4a375ad76b03b6a19812bad60d03 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_09721a2b34cc4c800d4271a699a81355.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-101/SC do km 100 ao 110<br>
+            <b>Acidentes:</b> 118<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 31<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 26%<br>
+            <b>Mortos em Acidentes:</b> 8<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 4<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 50%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_09721a2b34cc4c800d4271a699a81355.setIcon(icon_da8d4a375ad76b03b6a19812bad60d03);
+            
+    
+            var marker_83330a2309bb085e8eb2f177d047c45a = L.marker(
+                [-26.886875409009523, -48.71824717219047],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_676a943566a0928862e6ac99770bfa48 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_83330a2309bb085e8eb2f177d047c45a.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-101/SC do km 110 ao 120<br>
+            <b>Acidentes:</b> 241<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 56<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 23%<br>
+            <b>Mortos em Acidentes:</b> 7<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 5<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 71%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_83330a2309bb085e8eb2f177d047c45a.setIcon(icon_676a943566a0928862e6ac99770bfa48);
+            
+    
+            var marker_371dbe96824eeb5c56e607bfe920a3ba = L.marker(
+                [-26.950813337420715, -48.68980156596194],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_6da7db562e35f555b68d71506aaad088 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_371dbe96824eeb5c56e607bfe920a3ba.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-101/SC do km 120 ao 130<br>
+            <b>Acidentes:</b> 217<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 32<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 15%<br>
+            <b>Mortos em Acidentes:</b> 8<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 5<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 62%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_371dbe96824eeb5c56e607bfe920a3ba.setIcon(icon_6da7db562e35f555b68d71506aaad088);
+            
+    
+            var marker_358ad08202f9cf75e161dff824de5be6 = L.marker(
+                [-27.007939884463084, -48.630949230268456],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_d9ac6b93f77bca6db893c8ddcb551bca = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_358ad08202f9cf75e161dff824de5be6.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-101/SC do km 130 ao 140<br>
+            <b>Acidentes:</b> 279<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 38<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 14%<br>
+            <b>Mortos em Acidentes:</b> 8<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 4<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 50%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_358ad08202f9cf75e161dff824de5be6.setIcon(icon_d9ac6b93f77bca6db893c8ddcb551bca);
+            
+    
+            var marker_9d30bee13947526ec2108c07a0d485a1 = L.marker(
+                [-27.08323793305239, -48.60622667676538],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_1315352977289ed59b42efa2e7b95b07 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_9d30bee13947526ec2108c07a0d485a1.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-101/SC do km 140 ao 150<br>
+            <b>Acidentes:</b> 202<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 36<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 18%<br>
+            <b>Mortos em Acidentes:</b> 8<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 6<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 75%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9d30bee13947526ec2108c07a0d485a1.setIcon(icon_1315352977289ed59b42efa2e7b95b07);
+            
+    
+            var marker_32e7a3526970d73fbe0afa9f79628c1c = L.marker(
+                [-27.64482563903909, -48.665588090857135],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_95926a3ae4df361440ff44a5bb679278 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_32e7a3526970d73fbe0afa9f79628c1c.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-101/SC do km 210 ao 220<br>
+            <b>Acidentes:</b> 341<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 31<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 9%<br>
+            <b>Mortos em Acidentes:</b> 4<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 2<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 50%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_32e7a3526970d73fbe0afa9f79628c1c.setIcon(icon_95926a3ae4df361440ff44a5bb679278);
+            
+    
+            var marker_56ecb5ed665c8c73d919c9c130ac2f59 = L.marker(
+                [-25.301244707824424, -49.033554053969475],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_f8c6ba55670fcad266684110f9384c03 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_56ecb5ed665c8c73d919c9c130ac2f59.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-116/PR do km 10 ao 20<br>
+            <b>Acidentes:</b> 124<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 19<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 15%<br>
+            <b>Mortos em Acidentes:</b> 4<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 2<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 50%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_56ecb5ed665c8c73d919c9c130ac2f59.setIcon(icon_f8c6ba55670fcad266684110f9384c03);
+            
+    
+            var marker_ba219410ba7721a17fddae1d06f00011 = L.marker(
+                [-25.557114473274726, -49.295426389978026],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_ba4623c7c9dc364f77659257e2b073f0 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_ba219410ba7721a17fddae1d06f00011.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-116/PR do km 110 ao 120<br>
+            <b>Acidentes:</b> 189<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 47<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 25%<br>
+            <b>Mortos em Acidentes:</b> 6<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 5<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 83%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ba219410ba7721a17fddae1d06f00011.setIcon(icon_ba4623c7c9dc364f77659257e2b073f0);
+            
+    
+            var marker_cbbd4261864f2d237d60021a7753b45d = L.marker(
+                [-25.627173459562044, -49.313718053600965],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_0ba079bc8ad6b070860e674b4742c83c = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_cbbd4261864f2d237d60021a7753b45d.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-116/PR do km 120 ao 130<br>
+            <b>Acidentes:</b> 169<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 21<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 12%<br>
+            <b>Mortos em Acidentes:</b> 3<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 2<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 67%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cbbd4261864f2d237d60021a7753b45d.setIcon(icon_0ba079bc8ad6b070860e674b4742c83c);
+            
+    
+            var marker_f2fba32ee1c5662263c8f0fd46878d8a = L.marker(
+                [-23.053550460263157, -45.6007730293421],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_f857cc4a63df1a0b64593439bbb57914 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_f2fba32ee1c5662263c8f0fd46878d8a.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-116/SP do km 110 ao 120<br>
+            <b>Acidentes:</b> 112<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 35<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 31%<br>
+            <b>Mortos em Acidentes:</b> 3<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 2<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 67%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f2fba32ee1c5662263c8f0fd46878d8a.setIcon(icon_f857cc4a63df1a0b64593439bbb57914);
+            
+    
+            var marker_6cf6dc5a0bdd989b9475003148808550 = L.marker(
+                [-23.242719273355483, -45.92754116315615],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_c2786ddda053f32c98d180284727db57 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_6cf6dc5a0bdd989b9475003148808550.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-116/SP do km 150 ao 160<br>
+            <b>Acidentes:</b> 132<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 29<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 22%<br>
+            <b>Mortos em Acidentes:</b> 5<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 3<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 60%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6cf6dc5a0bdd989b9475003148808550.setIcon(icon_c2786ddda053f32c98d180284727db57);
+            
+    
+            var marker_70f3ae9aeddece099d0d84c1f06841f0 = L.marker(
+                [-23.415935169746376, -46.367982526123185],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_a2cc24d8bef503b54f4be37323d9bde5 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_70f3ae9aeddece099d0d84c1f06841f0.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-116/SP do km 200 ao 210<br>
+            <b>Acidentes:</b> 117<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 28<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 24%<br>
+            <b>Mortos em Acidentes:</b> 6<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 3<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 50%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_70f3ae9aeddece099d0d84c1f06841f0.setIcon(icon_a2cc24d8bef503b54f4be37323d9bde5);
+            
+    
+            var marker_940bcf66d1e1dd05a7c8672bb8ac5fb2 = L.marker(
+                [-23.675697279451697, -46.86043648582246],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_251df162ec6f60cbf76a317a59786b9c = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_940bcf66d1e1dd05a7c8672bb8ac5fb2.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-116/SP do km 280 ao 290<br>
+            <b>Acidentes:</b> 166<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 34<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 20%<br>
+            <b>Mortos em Acidentes:</b> 7<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 5<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 71%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_940bcf66d1e1dd05a7c8672bb8ac5fb2.setIcon(icon_251df162ec6f60cbf76a317a59786b9c);
+            
+    
+            var marker_d929f6346999e3c9be3086259ca09dea = L.marker(
+                [-20.821618512943036, -49.36502393528481],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_2b6fc1386a2e48da8795e996ef9cf62e = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_d929f6346999e3c9be3086259ca09dea.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-153/SP do km 60 ao 70<br>
+            <b>Acidentes:</b> 124<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 22<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 18%<br>
+            <b>Mortos em Acidentes:</b> 6<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 3<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 50%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d929f6346999e3c9be3086259ca09dea.setIcon(icon_2b6fc1386a2e48da8795e996ef9cf62e);
+            
+    
+            var marker_13cabfe7c686b798cc8e1f194c73e882 = L.marker(
+                [-11.868092137, -55.49653156195456],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_250baebebb4fd81c9432fcb865e9245c = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_13cabfe7c686b798cc8e1f194c73e882.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-163/MT do km 830 ao 840<br>
+            <b>Acidentes:</b> 101<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 13<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 13%<br>
+            <b>Mortos em Acidentes:</b> 2<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 1<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 50%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_13cabfe7c686b798cc8e1f194c73e882.setIcon(icon_250baebebb4fd81c9432fcb865e9245c);
+            
+    
+            var marker_637df8c08a4cc477d5fb8c0058ac5444 = L.marker(
+                [-7.160060223831615, -34.867778602457044],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_d85823acb3114036cd0cd721140d415d = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_637df8c08a4cc477d5fb8c0058ac5444.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-230/PB do km 20 ao 30<br>
+            <b>Acidentes:</b> 254<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 21<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 8%<br>
+            <b>Mortos em Acidentes:</b> 8<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 5<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 62%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_637df8c08a4cc477d5fb8c0058ac5444.setIcon(icon_d85823acb3114036cd0cd721140d415d);
+            
+    
+            var marker_edff44c99f9d3fb1b620c4dc10c3664a = L.marker(
+                [-25.515967281346157, -48.73750743467949],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_6c57976436fb8aa7697100d4f4a52745 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_edff44c99f9d3fb1b620c4dc10c3664a.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-277/PR do km 0 ao 10<br>
+            <b>Acidentes:</b> 215<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 63<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 29%<br>
+            <b>Mortos em Acidentes:</b> 9<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 5<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 56%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_edff44c99f9d3fb1b620c4dc10c3664a.setIcon(icon_6c57976436fb8aa7697100d4f4a52745);
+            
+    
+            var marker_b3946f74722ff90bf036da64375571d2 = L.marker(
+                [-25.50015164262626, -54.538894938181826],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_337129b38a4e819c030af5f03aec6c42 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_b3946f74722ff90bf036da64375571d2.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-277/PR do km 720 ao 730<br>
+            <b>Acidentes:</b> 153<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 23<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 15%<br>
+            <b>Mortos em Acidentes:</b> 2<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 1<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 50%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b3946f74722ff90bf036da64375571d2.setIcon(icon_337129b38a4e819c030af5f03aec6c42);
+            
+    
+            var marker_9ac2aed7f08f3bbd48fafb49a11a188e = L.marker(
+                [-26.474583707341267, -48.99852880138889],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_f5e1aff5b8ef24be453ee8f38102d3f3 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_9ac2aed7f08f3bbd48fafb49a11a188e.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-280/SC do km 50 ao 60<br>
+            <b>Acidentes:</b> 116<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 13<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 11%<br>
+            <b>Mortos em Acidentes:</b> 2<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 1<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 50%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9ac2aed7f08f3bbd48fafb49a11a188e.setIcon(icon_f5e1aff5b8ef24be453ee8f38102d3f3);
+            
+    
+            var marker_1096d87f3c7e92b6d2cdfb4fdbccf4f9 = L.marker(
+                [-5.151159806189789, -42.78012154665345],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_68ebc9862b0d024715feeac33cc43039 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_1096d87f3c7e92b6d2cdfb4fdbccf4f9.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-316/PI do km 0 ao 10<br>
+            <b>Acidentes:</b> 139<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 33<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 24%<br>
+            <b>Mortos em Acidentes:</b> 8<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 4<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 50%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1096d87f3c7e92b6d2cdfb4fdbccf4f9.setIcon(icon_68ebc9862b0d024715feeac33cc43039);
+            
+    
+            var marker_29c836f4d0699ebce8501582ab815a15 = L.marker(
+                [-12.872630778125, -38.432876496031255],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_7480831995cdea1911cc795d9a1b562f = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_29c836f4d0699ebce8501582ab815a15.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-324/BA do km 610 ao 620<br>
+            <b>Acidentes:</b> 138<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 25<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 18%<br>
+            <b>Mortos em Acidentes:</b> 4<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 2<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 50%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_29c836f4d0699ebce8501582ab815a15.setIcon(icon_7480831995cdea1911cc795d9a1b562f);
+            
+    
+            var marker_bfc42e21c8396f84be8bf99c5f6ebd9b = L.marker(
+                [-5.095601617508651, -42.76058200529411],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_d9f487e6e286c22ae313db55f6a9f3a8 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_bfc42e21c8396f84be8bf99c5f6ebd9b.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-343/PI do km 340 ao 350<br>
+            <b>Acidentes:</b> 125<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 27<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 22%<br>
+            <b>Mortos em Acidentes:</b> 7<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 6<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 86%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bfc42e21c8396f84be8bf99c5f6ebd9b.setIcon(icon_d9f487e6e286c22ae313db55f6a9f3a8);
+            
+    
+            var marker_838a52c9016201b0e354a9158162043e = L.marker(
+                [-10.437385280962344, -62.475377008242674],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_32510a55c7c7118c7887e11a4741d7f7 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_838a52c9016201b0e354a9158162043e.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-364/RO do km 420 ao 430<br>
+            <b>Acidentes:</b> 104<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 12<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 12%<br>
+            <b>Mortos em Acidentes:</b> 2<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 2<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 100%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_838a52c9016201b0e354a9158162043e.setIcon(icon_32510a55c7c7118c7887e11a4741d7f7);
+            
+    
+            var marker_3b1a1041655bd972f9a149a0c45ec040 = L.marker(
+                [-24.11839363957597, -50.91143073459363],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_1743654ad6260ffcec720250c00540d1 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_3b1a1041655bd972f9a149a0c45ec040.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-376/PR do km 0 ao 10<br>
+            <b>Acidentes:</b> 123<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 19<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 15%<br>
+            <b>Mortos em Acidentes:</b> 6<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 3<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 50%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3b1a1041655bd972f9a149a0c45ec040.setIcon(icon_1743654ad6260ffcec720250c00540d1);
+            
+    
+            var marker_0b06b440b25fd985cdc9ee6d8f0933ff = L.marker(
+                [-23.42608153590909, -51.92928638256493],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_927f9b517d3e4b657c52678d8abd190c = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_0b06b440b25fd985cdc9ee6d8f0933ff.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-376/PR do km 170 ao 180<br>
+            <b>Acidentes:</b> 128<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 15<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 12%<br>
+            <b>Mortos em Acidentes:</b> 1<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 1<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 100%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0b06b440b25fd985cdc9ee6d8f0933ff.setIcon(icon_927f9b517d3e4b657c52678d8abd190c);
+            
+    
+            var marker_4ee1bca4b27d98b1385a6f93cf73af0c = L.marker(
+                [-23.371679086682928, -46.56116167746341],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_563a8a2af9bcc3b274b615c33d8cd687 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_4ee1bca4b27d98b1385a6f93cf73af0c.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-381/SP do km 70 ao 80<br>
+            <b>Acidentes:</b> 108<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 21<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 19%<br>
+            <b>Mortos em Acidentes:</b> 2<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 1<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 50%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4ee1bca4b27d98b1385a6f93cf73af0c.setIcon(icon_563a8a2af9bcc3b274b615c33d8cd687);
+            
+    
+            var marker_31dffbc5432d396b38fc3177e5a08af2 = L.marker(
+                [-9.362413060416667, -40.48389684270833],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_bfb910817e6982d7716e88d44ec0b66e = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_31dffbc5432d396b38fc3177e5a08af2.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-428/PE do km 180 ao 190<br>
+            <b>Acidentes:</b> 106<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 9<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 8%<br>
+            <b>Mortos em Acidentes:</b> 2<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 1<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 50%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_31dffbc5432d396b38fc3177e5a08af2.setIcon(icon_bfb910817e6982d7716e88d44ec0b66e);
+            
+    
+            var marker_a34b06a75353f9b50d5cdc6050850ca7 = L.marker(
+                [-26.89755923567493, -49.1000764777135],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+        var icon_a1d820561f36780d8196b50589f96aa4 = L.icon({
+  "iconUrl": "https://img.icons8.com/plasticine/100/000000/truck.png",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+});
+        
+    
+            marker_a34b06a75353f9b50d5cdc6050850ca7.bindTooltip(
+                `<div>
+                     
+            <b>Local:</b> BR-470/SC do km 50 ao 60<br>
+            <b>Acidentes:</b> 156<br>
+            <b>Acidentes Envolvendo Veículo de Carga:</b> 19<br>
+            <b>Percentual de Acidentes Envolvendo Veículo de Carga:</b> 12%<br>
+            <b>Mortos em Acidentes:</b> 3<br>
+            <b>Mortos em Acidentes Envolvendo Veículo de Carga:</b> 2<br>
+            <b>Percentual de Mortos em Acidentes Envolvendo Veículo de Carga:</b> 67%
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a34b06a75353f9b50d5cdc6050850ca7.setIcon(icon_a1d820561f36780d8196b50589f96aa4);
+            
+    
+            var marker_23569c27030a5afe539efe11e756056c = L.marker(
+                [-7.0, -32.0],
+                {
+}
+            ).addTo(map_7ccbca11c7f5850fae64e99d8a1e9591);
+        
+    
+            var div_icon_8ccd4fdfc17a540513ae18929734262f = L.divIcon({
+  "html": "\n    \u003cdiv style=\"position: absolute;\n                 top: 0px; left: 0px; width: 450px;\n                 background-color:peachpuff; border:2px solid grey; z-index:9999; font-size:14px;\n                 padding: 10px;\"\u003e\n        \u003cdiv style=\"font-size:16px; text-align: center;font-weight: bold; font-style: italic; color: darkred; text-decoration: underline;\"\u003e\n            \u003cimg src=\"https://github.com/user-attachments/assets/f5031520-1d7e-4c3a-bebb-3b31dc617da6\" style=\"width:60px;height:80px;\"\u003e\u003cbr\u003e\n            \u003cp\u003e\u003c/p\u003e\u003cbr\u003e\n            \u003cp\u003eAcidentes envolvendo ve\u00edculos de carga por BR-UF-KM (2025)\u003c/p\u003e\u003cbr\u003e\n        \u003c/div\u003e\n        \u003cstrong\u003eLEGENDA:\u003c/strong\u003e\u003cbr\u003e\n        \u003cimg src=\"https://img.icons8.com/plasticine/100/000000/truck.png\" style=\"width:20px;height:20px;\"\u003e - Trecho de BR com mais de 100 acidentes e % de mortos em acidentes envolvendo ve\u00edculos de carga maior que a m\u00e9dia nacional.\u003cbr\u003e\n        \u003cp\u003e\u003c/p\u003e\u003cbr\u003e\n        \u003cdiv style=\"text-align: center;\"\u003e\n            \u003cimg src=\"https://github.com/user-attachments/assets/f92f2898-9e8b-443e-8c66-3b8c28e474d8\" style=\"width:400px;height:70px;\"\u003e\u003cbr\u003e\n        \u003c/div\u003e\n    \u003c/div\u003e\n",
+  "className": "empty",
+});
+        
+    
+                marker_23569c27030a5afe539efe11e756056c.setIcon(div_icon_8ccd4fdfc17a540513ae18929734262f);
+            
+</script>
+</html>
